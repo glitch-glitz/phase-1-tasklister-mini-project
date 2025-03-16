@@ -8,9 +8,11 @@ createTaskForm.addEventListener("submit", (event) => {
   event.preventDefault(); //this will prevent the page from reloading
 
   // get the input value
+  // it will store the text typed in the task description
   const description = document.getElementById("new-task-description").value;
-  //make a list
+  //make a list container,
   const myList = document.createElement("li");
+  //Set the Text Content of the list container
   myList.textContent = description;
   //append the task to the list
   taskList.appendChild(myList);
